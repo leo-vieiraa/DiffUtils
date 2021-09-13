@@ -21,5 +21,6 @@ data class Image(
     val imageURL: String,
     val user: String,
     val userImageURL: String,
+    val likes: Int,
 
 )

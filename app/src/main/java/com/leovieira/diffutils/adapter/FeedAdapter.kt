@@ -40,6 +40,7 @@ class FeedViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(image: Image) {
         binding.textViewName.text = image.user
         Glide.with(itemView).load(image.userImageURL).into(binding.imageViewAvatar)
+        binding.textViewLikes.text = image.likes.toString()
 
         Glide.with(itemView)
             .load(image.largeImageURL)
