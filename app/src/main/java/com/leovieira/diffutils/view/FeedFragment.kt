@@ -30,7 +30,7 @@ class FeedFragment : Fragment(R.layout.feed_fragment) {
     private val adapterFeed = FeedAdapter()
 
     private val observerImages = Observer<List<Image>> {
-        adapterFeed.update(it)
+        adapterFeed.submitList(it)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
